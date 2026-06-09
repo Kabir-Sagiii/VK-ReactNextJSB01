@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head></head>
+
+  <body>
+    <script>
+      function createUI() {
+        //JS Code to create Button
+        var button = document.createElement("button");
+        button.innerText = "Javascript button";
+
+        button.onclick = function () {
+          var img = document.createElement("img");
+          img.width = "200";
+          img.height = "200";
+
+          img.src =
+            "https://static.xx.fbcdn.net/rsrc.php/y0/r/U45qBJmWVHU.webp";
+
+          document.querySelector("body").appendChild(img);
+        };
+
+        document.querySelector("body").appendChild(button);
+
+        var ol = document.createElement("ol");
+        var li1 = document.createElement("li");
+        var li2 = document.createElement("li");
+
+        li1.innerText = "HTML";
+        li2.innerText = "JS";
+
+        ol.appendChild(li1);
+        ol.appendChild(li2);
+
+        document.querySelector("body").appendChild(ol);
+      }
+
+      createUI();
+      createUI();
+      createUI();
+      createUI();
+      createUI();
+    </script>
+  </body>
+</html>
