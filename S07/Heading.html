@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script>
+      //1. create React Element
+      var h1Obj = React.createElement(
+        "h1",
+        { id: "title", className: "heading" },
+        "Welcome to HTML World",
+      );
+
+      var p = React.createElement(
+        "p",
+        {},
+        `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad neque fugit quas dicta adipisci delectus aspernatur quasi ullam consequatur, animi tempora nam aut nisi repudiandae optio aperiam, earum quisquam dolore?`,
+      );
+
+      //2. Add React Element in Browser DOM
+      ReactDOM.render([p, h1Obj, p, p, h1Obj], document.getElementById("root"));
+    </script>
+  </body>
+</html>
