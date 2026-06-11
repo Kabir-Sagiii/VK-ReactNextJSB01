@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>DOM</title>
+    <script>
+      function listAllDocumentProperties() {
+        var count = 0;
+        var h1_DOM_Element = document.querySelector("h1");
+        var user = {
+          username: "Sagar",
+          id: 101,
+          gender: "male",
+        };
+
+        for (var key in h1_DOM_Element.style) {
+          console.log(key); //username id
+          count++;
+        }
+
+        console.log(count);
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>DOCUMENT OBJECT MODEL</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
+        mollitia minima corrupti dignissimos dolore, rerum earum maxime nisi, at
+        molestias nesciunt quidem aspernatur. Vel dolores, cumque nesciunt
+        nobis, laboriosam doloribus autem dolorem veniam quisquam aliquid,
+        officiis excepturi. Possimus, repellendus voluptates! Modi accusantium
+        tempore, recusandae voluptatibus vel maxime illo placeat delectus.
+      </p>
+      <button onclick="listAllDocumentProperties()">Explore More</button>
+    </div>
+  </body>
+</html>
