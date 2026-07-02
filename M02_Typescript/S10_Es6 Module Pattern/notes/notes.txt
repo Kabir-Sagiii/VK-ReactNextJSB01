@@ -1,0 +1,24 @@
+
+
+ES6 Module pattern will help us to access code of one file into another file
+
+1.create a file called package.json 
+2. Add a object in the package.json file 
+3. Add the following property 
+    "type":"module"
+
+
+How to export a code from a file ?
+   there are two ways to export 
+       1.Named export 
+       2.Default export
+       In One file we can have any number of Named Export
+
+
+How to import the code from other file 
+     there are two ways to import
+         1.Named Import
+         2.Default Import
+
+
+How to export as a default 
