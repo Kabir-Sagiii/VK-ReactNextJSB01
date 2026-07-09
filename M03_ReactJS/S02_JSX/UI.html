@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./UI.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <script type="text/babel">
+      const nav = (
+        <div id="nav-bar">
+          <div>
+            <h1>Ecommerce-Brand</h1>
+          </div>
+
+          <div>
+            <a href="">Home</a>
+            <a href="">Products</a>
+            <a href="">Profile</a>
+            <a href="">Carts</a>
+            <a href="">Contact us</a>
+            <button>Logout</button>
+          </div>
+        </div>
+      );
+
+      ReactDOM.render(nav, document.querySelector("body"));
+    </script>
+  </body>
+</html>

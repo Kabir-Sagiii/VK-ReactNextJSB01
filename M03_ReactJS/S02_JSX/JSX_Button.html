@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      h1 {
+        color: green;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <script type="text/babel">
+      var data = 4567;
+
+      //React code in JSX Approach
+      const btn = <button> JSX button </button>;
+      var heading = <h1> First title </h1>;
+      let p = <p> This is awesome to work with React JS </p>;
+      var div = (
+        <div>
+          <h2> h2 inside the div </h2>
+        </div>
+      );
+
+      const container = (
+        <section>
+          <ol>
+            <li>HTML</li>
+            <li>JS</li>
+            <li>REACTJS</li>
+          </ol>
+        </section>
+      );
+
+      const h3 = <h3> {data} </h3>;
+
+      ReactDOM.render(
+        [h3, container, heading, btn, heading, p, div],
+        document.querySelector("body")
+      );
+    </script>
+  </body>
+</html>

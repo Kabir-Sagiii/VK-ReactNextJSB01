@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+}
+#nav-bar{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 90px;
+    background-color: black;
+}
+
+#nav-bar > div:nth-child(1) {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: tomato;
+
+}
+h1 {
+    font-size: 42px;
+}
+
+#nav-bar > div:nth-child(2){
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 17px;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+}

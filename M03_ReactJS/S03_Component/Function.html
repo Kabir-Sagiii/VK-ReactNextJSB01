@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #card {
+        width: 270px;
+        padding: 10px;
+        margin: 20px;
+        text-align: center;
+        box-shadow: 0 0 10px black;
+      }
+      #main {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function createCard(username, image) {
+        return (
+          <div id="card">
+            <img src={image} width="100%" height="200" alt="" />
+            <h3>{username}</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam,
+              illum vero.
+            </p>
+          </div>
+        );
+      }
+
+      function main() {
+        return (
+          <div id="main">
+            {createCard(
+              "Riya Patel",
+              "https://images.rawpixel.com/image_social_square/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA4L3Jhd3BpeGVsX29mZmljZV8zNV9iZWF1dGlmdWxfc21pbGluZ195b3VuZ19pbmRpYW5fYnVzaW5lc3Nfd29tYV8yYWM3MjMyNS1jZmU3LTQ5ODgtODBkNi03YjViZTg3ODYzNjNfMS5qcGc.jpg"
+            )}
+            {createCard(
+              "Aditya Verma",
+              "https://img.freepik.com/premium-photo/happy-man-ai-generated-portrait-user-profile_1119669-1.jpg?w=2000"
+            )}
+            {createCard(
+              "Rahul Khanna",
+              "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/55f224cd-99a1-4b3b-4a15-c76d37505200/public"
+            )}
+            {createCard(
+              "Sid Patil",
+              "https://wallpapers.com/images/file/professional-profile-pictures-1080-x-1080-460wjhrkbwdcp1ig.jpg"
+            )}
+          </div>
+        );
+      }
+
+      ReactDOM.render(main(), document.getElementById("root"));
+    </script>
+  </body>
+</html>

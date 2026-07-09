@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #card {
+        width: 270px;
+        padding: 10px;
+        margin: 20px;
+        text-align: center;
+        box-shadow: 0 0 10px black;
+      }
+    </style>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      var card = (
+        <div id="card">
+          <img
+            src="https://img.freepik.com/premium-photo/happy-man-ai-generated-portrait-user-profile_1119669-1.jpg?w=2000"
+            width="100%"
+            height="200"
+            alt=""
+          />
+          <h3>Rohan Verma</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam,
+            illum vero.
+          </p>
+        </div>
+      );
+
+      ReactDOM.render(
+        [card, card, card, card],
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
