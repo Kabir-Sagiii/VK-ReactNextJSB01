@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #app {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      #card {
+        width: 270px;
+        box-shadow: 0 0 10px black;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function Card(props) {
+        // para = {image:"",uname:""}
+        return (
+          <div id="card">
+            <img src={props.image} width="100%" height="220" alt="" />
+            <h3>{props.uname}</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Inventore, aliquid quidem.
+            </p>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div id="app">
+            <Card
+              image={
+                "https://img.freepik.com/premium-photo/professional-males-colleagues-hd-8k-wallpaper-stock-photographic-image_1033957-29162.jpg"
+              }
+              uname={"Raj Sharma"}
+            />
+            <Card
+              image={
+                "https://thumbs.dreamstime.com/b/serious-indian-professional-business-man-office-portrait-serious-young-ambitious-indian-businessman-project-leader-dressed-367980912.jpg"
+              }
+              uname={"Ajay Sadguru"}
+            />
+            <Card
+              image={
+                "https://static.vecteezy.com/system/resources/previews/029/891/975/non_2x/business-american-man-in-light-cream-ai-generative-free-photo.jpg"
+              }
+              uname={"Rakesh Reddy"}
+            />
+            <Card
+              image={
+                "https://i.pinimg.com/originals/74/fc/5f/74fc5f9c73880ff75b301babec974cf4.jpg"
+              }
+              uname={"Amit Patil"}
+            />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
