@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./Container.css" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function Card(props) {
+        return (
+          <div id="card">
+            <img src={props.image} width="100%" height="90%" />
+            <h4>{props.offer}</h4>
+          </div>
+        );
+      }
+
+      function MainContainer(props) {
+        //props = {data : ["",[{image,offer},{},{},{}]]}
+        return (
+          <div id="main-container">
+            <div>
+              <h2>{props.data[0]}</h2>
+            </div>
+            <div>
+              <Card
+                image={props.data[1][0].image}
+                offer={props.data[1][0].offer}
+              />
+              <Card
+                image={props.data[1][1].image}
+                offer={props.data[1][1].offer}
+              />
+              <Card
+                image={props.data[1][2].image}
+                offer={props.data[1][2].offer}
+              />
+              <Card
+                image={props.data[1][3].image}
+                offer={props.data[1][3].offer}
+              />
+            </div>
+          </div>
+        );
+      }
+
+      function App() {
+        var allData = [
+          [
+            "Best Seller",
+            [
+              {
+                image:
+                  "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/e/a/r/-original-imahnhbh5gczzfth.jpeg?q=70",
+                offer: "20% off",
+              },
+              {
+                image:
+                  "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/y/6/h/m19-true-wireless-earbuds-powerful-bass-smart-touch-control-led-original-imahk6byyg7tphhg.jpeg?q=70",
+                offer: "30% off",
+              },
+              {
+                image:
+                  "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/n/e/r/ultrapood-bluetooth-shristraders-original-imahg886gt3kp4jy.jpeg?q=70",
+                offer: "70% off",
+              },
+              {
+                image:
+                  "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/r/h/f/bluetooth-tws-earbuds-with-digital-display-charging-case-in-ear-original-imahpfyurkcs8mue.jpeg?q=70",
+                offer: "50% off",
+              },
+            ],
+          ],
+          [
+            "Widest Collection",
+            [
+              { image: "", offer: "" },
+              { image: "", offer: "" },
+              { image: "", offer: "" },
+              { image: "", offer: "" },
+            ],
+          ],
+          [
+            "Spolight's On",
+            [
+              {
+                image:
+                  "https://rukminim2.flixcart.com/image/612/612/xif0q/mobile/k/x/z/-original-imahznh8qytg6qty.jpeg?q=70",
+                offer: "deal offer 30% off",
+              },
+              {
+                image:
+                  "https://rukminim2.flixcart.com/image/612/612/xif0q/mobile/7/h/u/-original-imahz8ygrvtymdby.jpeg?q=70",
+                offer: "50% off",
+              },
+              {
+                image:
+                  "https://rukminim2.flixcart.com/image/612/612/xif0q/mobile/o/l/2/-original-imahgfmzvanpgncf.jpeg?q=70",
+                offer: "Deal offer 10% off",
+              },
+              {
+                image:
+                  "https://rukminim2.flixcart.com/image/612/612/xif0q/mobile/f/i/v/-original-imahhhfvqhmf7fgg.jpeg?q=70",
+                offer: "Deal offer 70% off",
+              },
+            ],
+          ],
+          [
+            "Home Decors & furnishing",
+            [
+              { image: "", offer: "" },
+              { image: "", offer: "" },
+              { image: "", offer: "" },
+              { image: "", offer: "" },
+            ],
+          ],
+        ];
+
+        return (
+          <div>
+            <MainContainer data={allData[0]} />
+
+            <MainContainer data={allData[1]} />
+
+            <MainContainer data={allData[2]} />
+
+            <MainContainer data={allData[3]} />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
