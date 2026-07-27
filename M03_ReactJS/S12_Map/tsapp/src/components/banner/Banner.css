@@ -1,0 +1,9 @@
+.banner {
+    width: 90%;
+    height: 400px;
+    margin: 30px auto;
+    box-shadow: 0 0 10px black;
+    background-image: url("https://media.craftyartapp.com/uploadedFiles/thumb_file/cf0a2b30d87be3250c91f80c1691baf5378c7af01673860444.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+}

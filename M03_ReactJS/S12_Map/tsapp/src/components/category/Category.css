@@ -1,0 +1,8 @@
+.category {
+    text-align: center;
+    padding: 5px;
+}
+.category img {
+    box-shadow: 0 0 10px green;
+    border-radius: 50%;
+}
