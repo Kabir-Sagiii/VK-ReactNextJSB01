@@ -1,0 +1,16 @@
+.nav{
+    background-color: black;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+}
+.nav button {
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 50px;
+}
