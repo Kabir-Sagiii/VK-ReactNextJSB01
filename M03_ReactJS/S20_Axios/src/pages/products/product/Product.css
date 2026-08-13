@@ -1,0 +1,33 @@
+.product {
+    width: 270px;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0 0 10px green;
+}
+
+.product h3{
+    margin: 20px 0px;
+    color: green;
+}
+.product p {
+    margin: 13px 0px;
+}
+.product button {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    padding: 11px 20px;
+    margin-bottom: 13px;
+    border: none;
+    margin-right: 5px;
+}
+#product-details-btn{
+    background-color: gray;
+}
+.product img {
+    transition-property: transform;
+    transition-duration: 2s;
+}
+.product img:hover {
+    transform: scale(1.2);
+}

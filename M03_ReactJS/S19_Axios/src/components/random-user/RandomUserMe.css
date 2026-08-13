@@ -1,0 +1,17 @@
+.random-user {
+    padding: 50px;
+}
+.random-user h1 {
+    font-size: 52px;
+    color: blue;
+}
+.random-user button {
+    padding: 12px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+#no-data {
+    color: red;
+}

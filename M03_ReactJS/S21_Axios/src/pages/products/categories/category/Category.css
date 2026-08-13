@@ -1,0 +1,9 @@
+.category input {
+    margin-right: 5px;
+}
+
+.category label {
+    color: Green;
+    text-transform: capitalize;
+    font-size: 27px;
+}
