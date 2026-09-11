@@ -1,0 +1,13 @@
+.react-form{
+    padding: 50px;
+    width: 300px;
+    margin: 50px auto;
+}
+.react-form form {
+     box-shadow: 0 0 10px black;
+     text-align: center;
+     padding: 20px;
+}
+.error-message {
+    color: red;
+}
