@@ -1,0 +1,40 @@
+
+export async function GET(){
+//pre-defined object : request and Response
+var dataResponse = {
+    results:[{id:"o1",name:"Sagar"},{id:"o2",name:"Kabir"}],
+    ok : true
+}
+
+return Response.json(dataResponse)
+
+}
+// Get : http://localhost:3000/api/orders
+
+
+export async function POST(request:Request){
+
+  return Response.json({
+    result:"Working"
+  })
+  
+}
+
+//Post : http://localhost:3000/api/orders
+
+
+export async function PUT(request:Request){
+
+  return Response.json({
+    result:"Working"
+  })
+  
+}
+
+export async function Delete(request:Request){
+
+  return Response.json({
+    result:"Working"
+  })
+  
+}
